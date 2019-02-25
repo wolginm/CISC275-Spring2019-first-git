@@ -1,0 +1,93 @@
+For this assignment you will be using version control, which is necessary to work effectively in a team.
+
+"What is version control, and/or what is Git?" Read: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control (Links to an external site.) 
+
+For this assignment you will follow the instructions at the above link to: 
+
+- Set up git on your machine (https://git-scm.com) See Chapter 1 of the linked text.
+
+- Establish a directory to play in, and initialize it. Having a play space is very important. When you aren't sure exactly what something does in git, you can go to your play directory and test things there.
+
+- Read Chapter 2. Play with add, commit, status, diff, diff --staged, reset, log.
+
+- In your play directory, create four files. Make is so that: one is untracked; one is modified; one is staged; one is in the repo. Verify the state of your four files and ask another person to confirm you have those four files in four states.
+
+In this space, type the sequence of commands you used to achieve the final state of all four files:
+
+mkdir cisc275_testRepo
+git init
+touch modified unmodified staged inRepo
+git add inRepo
+git commit -m "Test"
+git add modified staged
+echo "Hi" >> modified
+git status
+
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   staged
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   modified
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	unmodified
+
+
+%%%%%%%%%%%%%%% Working with GitHub %%%%%%%%%%%%%%%%%%%%%%
+
+- Create a Github account  (at www.github.com (Links to an external site.)), write down your username below.
+
+Username: NCC74656
+
+- Clone this repository to your local machine: https://github.com/mehak25/CISC275-Spring2019-first-git (DO NOT FORK IT)
+
+
+
+Create an empty repository under your GitHub account and name it "CISC275-Spring2019-first-git".
+Paste the URL of your repository here:
+
+https://github.com/NCC74656/CISC275-Spring2019-first-git.git
+
+Back in your machine, create a new local repository:
+
+- Create file named your <FirstInitial><LastName>.txt. Write your username and URL to your GitHub repository created in previous steps in the file. Upload this file on canvas.
+
+- Add file to the new local repo
+
+- Add MyCompare3 and your java files as specified in the README.
+
+- Answer the questions 2 and 3 in the README file (write answers in the file itself) and add file to your local repo.
+
+- Commit local changes 
+
+- Push commit to master branch of your GitHub repo
+
+- Upload the file <FirstInitial><LastName>.txt on canvas with details of your username and URL to your GitHub repository created in previous steps.
+ 
+
+Very useful links:  
+
+https://help.github.com/articles/set-up-git/ (Links to an external site.)Links to an external site. 
+
+https://help.github.com/articles/cloning-a-repository/ (Links to an external site.)Links to an external site. 
+
+https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/ (Links to an external site.)Links to an external site. 
+
+There is also a GitHub desktop application that you can use instead of command line. It is not recommended. The command line avoids problems, leads to understanding, and helps you prepare for exams.
+
+While I am not a fan of the Eclipse extension for git (I've had many issues with it in the past), you should know that it exists. You are free to use it if you wish, but I do not recommend and we will not be very helpful if there are issues with it. You can find it here: 
+
+http://www.eclipse.org/egit/ (Links to an external site.)
+
+
+Cygwin shell for Windows: http://www.cygwin.com/
+
+Windows Powershell: https://www.infoworld.com/article/3126427/microsoft-windows/go-pro-the-power-users-guide-to-powershell.html
